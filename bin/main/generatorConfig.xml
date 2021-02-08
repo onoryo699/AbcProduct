@@ -44,5 +44,69 @@
             <columnOverride column="id" delimitedColumnName="true"/>
             <columnOverride column="name" delimitedColumnName="true"/>
         </table>
+        <table tableName="INVENTORY" domainObjectName="InventoryModel"
+            mapperName="InventoryRepository"
+            enableInsert="true"
+            enableSelectByPrimaryKey="true"
+            enableSelectByExample="true"
+            enableUpdateByPrimaryKey="true"
+            enableUpdateByExample="true"
+            enableDeleteByPrimaryKey="true"
+            enableDeleteByExample="true"
+            enableCountByExample="true"
+            selectByExampleQueryId="true"
+            modelType="flat" >
+            <columnRenamingRule searchString="^class$" replaceString="clazz"/>
+            <columnOverride column="id" delimitedColumnName="true"/>
+            <columnOverride column="name" delimitedColumnName="true"/>
+        </table>
+        <table tableName="ITEM" domainObjectName="ItemModel"
+            mapperName="itemRepository"
+            enableInsert="true"
+            enableSelectByPrimaryKey="true"
+            enableSelectByExample="true"
+            enableUpdateByPrimaryKey="true"
+            enableUpdateByExample="true"
+            enableDeleteByPrimaryKey="true"
+            enableDeleteByExample="true"
+            enableCountByExample="true"
+            selectByExampleQueryId="true"
+            modelType="flat" >
+            <columnRenamingRule searchString="^class$" replaceString="clazz"/>
+            <columnOverride column="id" delimitedColumnName="true"/>
+            <columnOverride column="name" delimitedColumnName="true"/>
+        </table>
+        <table tableName="STORAGE" domainObjectName="StorageModel"
+            mapperName="StorageRepository"
+            enableInsert="true"
+            enableSelectByPrimaryKey="true"
+            enableSelectByExample="true"
+            enableUpdateByPrimaryKey="true"
+            enableUpdateByExample="true"
+            enableDeleteByPrimaryKey="true"
+            enableDeleteByExample="true"
+            enableCountByExample="true"
+            selectByExampleQueryId="true"
+            modelType="flat" >
+            <columnRenamingRule searchString="^class$" replaceString="clazz"/>
+            <columnOverride column="id" delimitedColumnName="true"/>
+            <columnOverride column="name" delimitedColumnName="true"/>
+        </table>
+        <table tableName="HISTORY" domainObjectName="HistoryModel"
+            mapperName="HistoryRepository"
+            enableInsert="true"
+            enableSelectByPrimaryKey="true"
+            enableSelectByExample="true"
+            enableUpdateByPrimaryKey="true"
+            enableUpdateByExample="true"
+            enableDeleteByPrimaryKey="true"
+            enableDeleteByExample="true"
+            enableCountByExample="true"
+            selectByExampleQueryId="true"
+            modelType="flat" >
+            <columnRenamingRule searchString="^class$" replaceString="clazz"/>
+            <columnOverride column="id" delimitedColumnName="true"/>
+            <columnOverride column="name" delimitedColumnName="true"/>
+        </table>
     </context>
 </generatorConfiguration>

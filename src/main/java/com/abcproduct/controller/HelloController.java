@@ -25,15 +25,12 @@ public class HelloController {
 
 
     @RequestMapping(path = "hello", method = RequestMethod.GET)
-    public String hello(Model model,@RequestParam("name") String name,@RequestParam("id") int id) {
+    public String hello(Model model,@RequestParam("id") int id,@RequestParam("name") String name) {
     	String n = name;
     	int i = id;
     	TestTableModel testTableModel = testTableRepository.selectByPrimaryKey(id);
-    	TestTableModel testTableModel2 = testTableRepository.selectByName(name);
 
 
-
-    	model.addAttribute("testTable2", testTableModel2);
     	model.addAttribute("testTable", testTableModel);
     	model.addAttribute("greeting", "Hello,World!");
         return "hello";
