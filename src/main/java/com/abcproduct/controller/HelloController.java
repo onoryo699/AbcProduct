@@ -25,8 +25,7 @@ public class HelloController {
 
 
     @RequestMapping(path = "hello", method = RequestMethod.GET)
-    public String hello(Model model,@RequestParam("id") int id,@RequestParam("name") String name) {
-    	String n = name;
+    public String hello(Model model,@RequestParam("id") int id) {
     	int i = id;
     	TestTableModel testTableModel = testTableRepository.selectByPrimaryKey(id);
 
